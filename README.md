@@ -1,4 +1,4 @@
 resume
 ======
 
-My resume using LaTex's morderncv package
+My resume using LaTeX's morderncv package
