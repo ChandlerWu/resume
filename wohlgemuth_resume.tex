@@ -9,9 +9,9 @@
 \documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
@@ -19,9 +19,9 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.9]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+% \setlength{\makecvtitlenamewidth}{100cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Jerry}{Wohlgemuth}
@@ -36,40 +36,47 @@
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace{-1.5cm}
+\vspace{-1.25cm}
 
 %----------------------------------------------------------------------------------------
 %  EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
 \section{Experience}
-\cventry{2014--present}{Director of Special Projects}{WMC Global}{Fairfax, VA}{}{Head of research and development department that conducts analytics and launches new products
+\cventry
+{2014--present}
+{Director of Technology}{Media Thirst}{Washington DC}{}
+{Lead team of five developers maintaining and imporving three web applications
 \begin{itemize}
-\item Oversee development of all Python based, R\&D products
+\item Oversee development of all Python based products
 \item Manage automated deployments of web applications using Fabric to CentOS cloud servers
 \item Train members of R\&D team on our technology stack: Python, Django, uWSGI, Nginx, Fabric, MySQL, MongoDB
-\item Maintain data warehouse and production ETLs that power production applications
-\item Develop a web application based on scraping information from Websites, writing this data to MongoDB, and serving it using the Django MongoEngine ORM
+\item Maintain data warehouse and production ETLs that power production Java applications
+\item Develop web application based on crawling and scraping large amounts of data
+\end{itemize}}
+\vspace{.15cm}
+
+\cventry{2014--2014}{Director of Special Projects}{WMC Global}{Fairfax, VA}{}{Head of research and development department that conducts analytics and launches new products
+\begin{itemize}
+\item Oversaw development of all Python based prototypes
+\item Managed automated deployments of web applications using Fabric
+\item Trained members of R\&D team on our technology stack: Python, Django, uWSGI, Nginx, Fabric, MySQL, MongoDB
+\item Developed web application based on crawling and scraping large amounts of data which levereged MongoDB
 \end{itemize}}
 \vspace{.15cm}
 
 \cventry{2013--2014}{Manager of Data Analytics}{WMC Global}{Fairfax, VA}{}{Managed team of three data analysts that supported current products and drove innovation
 \begin{itemize}
 \item Conducted interviews, on-boarded, and trained all new data analysts
-\item Developed backend for new, client facing portal in Python
-\item Oversaw organization wide reporting deliverables
+\item Maintained data warehouse and production ETLs that power production Java applications
+\item Oversaw organization wide reporting deliverables and set up Tableau server environment to enhance these deliverables
 \item Furthered client relationships by providing on demand technical consulting
-\item Developed rapid prototypes in Python, using the Django web framework
 \end{itemize}}
 \vspace{.15cm}
 
 \cventry{2011--2013}{Senior Data Analyst}{WMC Global}{Fairfax, VA}{}{Expanded organization's analytics consulting and development capabilities, leading to creation of data analytics department
 \begin{itemize}
-\item Engineered credit score-like product to evaluate risk of current and potential third party
-billing partners on wireless carrier’s networks, powered by R
-\item Conceived and implemented fraud detection product, built using Pentaho Data Integration,
-to protect client’s subscriber based
-\item Designed and maintained data warehouse using Pentaho Data Integration
+\item Engineered credit score-like product to evaluate risk of current and potential third party billing partners on wireless carrier’s networks
+\item Conceived and implemented fraud detection product, built using Pentaho Data Integration, to protect client’s subscriber based
 \item Programmed R scripts to produce monthly and ad hoc client deliverables using ggplot2
 \item Liaised with client attorneys to provide ad hoc reporting requests to federal and state
 government bodies for top-tier wireless carrier
@@ -84,21 +91,21 @@ government bodies for top-tier wireless carrier
 \end{itemize}}
 
 %----------------------------------------------------------------------------------------
+%  SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+\cvdoubleitem{Language}{Python, SQL, Javascript, R}{ETL}{Pentaho Data Integration}
+\cvdoubleitem{Persistance}{MySQL, MongoDB, Redis, ElasticSearch}{Server Side}{Django, Tastypie, uWSGI, Nginx, Flask}
+\cvdoubleitem{Client Side}{Bootstrap, AngularJS, jQuery, D3}{Data Mining}{Rattle, Weka, NLTK}
+
+%----------------------------------------------------------------------------------------
 %  EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
 \cventry{2009--2010}{MA}{James Madison University}{Florence, Italy}{}{Political Science \textbf{4.0}/4.0}  % arguments 3 to 6 can be left empty
 \cventry{2005--2009}{BA}{James Madison University}{Harrisonburg, VA}{}{International Affairs \textbf{3.4}/4.0}
-
-%----------------------------------------------------------------------------------------
-%  SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Skills}
-\cvdoubleitem{Language}{Python, SQL, R, JavaScript}{ETL}{Pentaho Data Integration}
-\cvdoubleitem{Database}{MySQL, MongoDB, Teradata}{Web Backend}{Django, uWSGI, Nginx}
-\cvdoubleitem{Web Frontend}{D3, Bootstrap, jQuery}{Data Mining}{Rattle, Weka, NLTK}
 
 %----------------------------------------------------------------------------------------
 %  ACHIEVEMENTS SECTION
