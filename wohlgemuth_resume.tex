@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10.1pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -19,13 +19,13 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.863]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 % \setlength{\makecvtitlenamewidth}{100cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Jerry}{Wohlgemuth}
-\address{4641 4th Rd. N.}{Arlington, VA 22203}{United States}
+\address{4641 4th Rd. N.}{Arlington, VA 22203}{}
 \phone[mobile]{+1~(703)~786~2963}                   % optional, remove / comment the line if not wanted
 \email{wohlgejm@gmail.com}                               % optional, remove / comment the line if not wanted
 \homepage{jerrywohlgemuth.com}                         % optional, remove / comment the line if not wanted
@@ -44,23 +44,23 @@
 \section{Experience}
 \cventry
 {2014--present}
-{Director of Technology}{Media Thirst}{Washington DC}{}
+{Director of Technology}{Media Thirst}{Washington, DC}{}
 {Lead team of five developers maintaining and improving all Python applications
 \begin{itemize}
 \item Architect all web applications with a focus on feature delivery, scale, and code readability
-\item Continually evaluate performance of web applications, tuning queries, adding MySQL replications, and Memcached servers as needed
-\item Develop Celery based web crawlers deployed on virtual machines that dynamically increased based on the size of the RabbitMQ queue; begin to port areas of application requiring concurrency to Golang
-\item Oversee optimial character recognition development to recognize text within advertisments; leverage Alchemy API and other natual language processing techniques to extract meaning from the text
+\item Continually evaluate performance of web applications: tuning queries, adding MySQL replicas, and spinning up Memcached servers as needed
+\item Develop Celery-based web crawlers deployed on virtual machines that dynamically increase based on the size of the RabbitMQ queue; port areas of application requiring concurrency to Golang
+\item Oversee optical character recognition development to recognize text within advertisements; leverage Alchemy API and other natural language processing techniques to extract meaning from the text
 \item Improve user experience through AngularJS feature implementation
 \end{itemize}}
 \vspace{.15cm}
 
 \cventry{2014--2014}{Director of Special Projects}{WMC Global}{Fairfax, VA}{}{Headed research and development department that conducted analytics and launched new prototypes
 \begin{itemize}
-\item Oversaw development of all Python based prototypes
+\item Oversaw development of all rapid prototypes
 \item Managed automated deployments of web applications using Fabric
-\item Trained members of R\&D team on our technology stack: Python, Django, uWSGI, Nginx, Fabric, MySQL, MongoDB
-\item Developed web application based on crawling and scraping large amounts of data which levereged MongoDB
+\item Trained members of R\&D team on technology stack: Python, Django, uWSGI, Nginx, Fabric, MySQL, MongoDB
+\item Developed web application based on crawling and scraping large amounts of data from the Google Play Store
 \end{itemize}}
 \vspace{.15cm}
 
@@ -68,8 +68,8 @@
 \begin{itemize}
 \item Conducted interviews, on-boarded, and trained all new data analysts
 \item Maintained data warehouse and production ETLs that power production Java applications
-\item Oversaw organization wide reporting deliverables and set up Tableau server environment to enhance these deliverables
-\item Furthered client relationships by providing on demand technical consulting
+\item Oversaw organization-wide reporting deliverables and set up a Tableau server environment to enhance data visualization capabilities
+\item Furthered client relationships by providing on-demand technical consulting
 \end{itemize}}
 \vspace{.15cm}
 
@@ -83,7 +83,7 @@ government bodies for top-tier wireless carrier
 \end{itemize}}
 \vspace{.15cm}
 
-\cventry{2011}{Program Intern}{German Marshall Fund}{Washington, DC}{}{Interned for the Transatlantic Trends department, an annual public opinion survey
+\cventry{2011--2011}{Program Intern}{German Marshall Fund}{Washington, DC}{}{Interned for the Transatlantic Trends department, an annual public opinion survey
 \begin{itemize}
 \item Verified findings and edited publications for the Transatlantic Trends team
 \item Coordinated a launch event for a new survey of transatlantic leaders
@@ -96,8 +96,8 @@ government bodies for top-tier wireless carrier
 
 \section{Skills}
 \cvdoubleitem{Language}{Python, SQL, Javascript, R}{ETL}{Pentaho Data Integration}
-\cvdoubleitem{Persistance}{MySQL, MongoDB, Redis, ElasticSearch}{Server Side}{Django, Tastypie, uWSGI, Nginx, Flask}
-\cvdoubleitem{Client Side}{Bootstrap, AngularJS, jQuery, D3}{Data Mining}{Rattle, Weka, NLTK}
+\cvdoubleitem{Persistence}{MySQL, MongoDB, Redis, ElasticSearch}{Server Side}{Django, Tastypie, uWSGI, Nginx, Flask}
+\cvdoubleitem{Client Side}{Bootstrap, AngularJS, jQuery, D3}{Data Mining}{NLTK, Weka, Rattle}
 
 %----------------------------------------------------------------------------------------
 %  EDUCATION SECTION
