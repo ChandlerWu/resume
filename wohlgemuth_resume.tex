@@ -19,13 +19,13 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.863]{geometry}
+\usepackage[scale=0.88]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 % \setlength{\makecvtitlenamewidth}{100cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Jerry}{Wohlgemuth}
-\address{4641 4th Rd. N.}{Arlington, VA 22203}{}
+\address{86 Park Ave. Apt. 2}{Hoboken, NJ 07030}{}
 \phone[mobile]{+1~(703)~786~2963}                   % optional, remove / comment the line if not wanted
 \email{wohlgejm@gmail.com}                               % optional, remove / comment the line if not wanted
 \homepage{jerrywohlgemuth.com}                         % optional, remove / comment the line if not wanted
@@ -46,8 +46,13 @@
 \cventry
 {2015--present}
 {Software Engineer}{StellaService}{New York NY}{}
-{Develop Ruby on Rails and Django web apps that deliver customer service metrics to enterprises
+{Member of an agile development team focusing on TDD and paired programming
 \begin{itemize}
+\item Develop Rails app that serves thousands of customer service agents who solicit feedback from their customers
+\item Contribute to a Django app that delivers customer service metrics to retailers and Google
+\item Design AWS API Gateway/Lambda service to allow Zendesk, Desk.com and other CRMs to integrate with the core app
+\item Build a Django service to handle sending marketing emails as follow ups to solicitations sent through the Rails app
+\item Maintain separate EmberJS service that collects customer feedback
 \end{itemize}}
 
 \cventry
@@ -55,10 +60,10 @@
 {Director of Technology}{Media Thirst}{Washington, DC}{}
 {Led team of five developers maintaining and improving Python applications
 \begin{itemize}
-\item Architect all web applications with a focus on velocity and scalability
-\item Develop Celery-based web crawlers deployed on virtual machines that dynamically increase based on the size of the RabbitMQ queue; port areas of application requiring concurrency to Golang
-\item Oversee optical character recognition development to recognize text within advertisements; leverage Alchemy API and other natural language processing techniques to extract meaning from the text
-\item Improve user experience through AngularJS feature implementation
+\item Architected all web applications with a focus on velocity and scalability
+\item Developed Celery-based web crawlers deployed on virtual machines that dynamically increase based on the size of the RabbitMQ queue; port areas of application requiring concurrency to Golang
+\item Oversaw optical character recognition development to recognize text within advertisements; leverage Alchemy API and other natural language processing techniques to extract meaning from the text
+\item Improved user experience through AngularJS feature implementation
 \item Managed automated deployments of web applications using Fabric
 \item Developed web application based on crawling and scraping large amounts of data from the Google Play Store
 \end{itemize}}
@@ -67,50 +72,46 @@
 \cventry{2013--2014}{Manager of Data Analytics}{WMC Global}{Fairfax, VA}{}{Managed team of three data analysts that supported current products and drove innovation
 \begin{itemize}
 \item Conducted interviews, on-boarded, and trained all new data analysts
+\item Programmed R scripts to produce monthly and adhoc client deliverables using ggplot2
 \item Maintained data warehouse and production ETLs that power production Java applications
-\item Oversaw organization-wide reporting deliverables and set up a Tableau server environment to enhance data visualization capabilities
+\item Oversaw organization-wide reporting deliverables and provisioned a Tableau server to enhance data visualization capabilities
 \item Furthered client relationships by providing on-demand technical consulting
 \end{itemize}}
 \vspace{.15cm}
 
 \cventry{2011--2013}{Senior Data Analyst}{WMC Global}{Fairfax, VA}{}{Expanded organization's analytics consulting and development capabilities, leading to creation of data analytics department
 \begin{itemize}
-\item Engineered credit score-like product to evaluate risk of current and potential third party billing partners on wireless carrier’s networks
-\item Conceived and implemented fraud detection product, built using Pentaho Data Integration, to protect client’s subscriber based
-\item Programmed R scripts to produce monthly and ad hoc client deliverables using ggplot2
+\item Engineered credit score-like product to evaluate risk of current and potential third party billing partners on wireless carrier’s networks in Python
+\item Conceived and implemented fraud detection product, built using Pentaho Data Integration, to protect client’s subscriber base
 \item Liaised with client attorneys to provide ad hoc reporting requests to federal and state
 government bodies for top-tier wireless carrier
 \end{itemize}}
 \vspace{.15cm}
-
-\cventry{2011--2011}{Program Intern}{German Marshall Fund}{Washington, DC}{}{Interned for the Transatlantic Trends department, an annual public opinion survey
-\begin{itemize}
-\item Verified findings and edited publications for the Transatlantic Trends team
-\item Coordinated a launch event for a new survey of transatlantic leaders
-\item Co-authored a blog post on the 2011 uprisings in North Africa
-\end{itemize}}
 
 %----------------------------------------------------------------------------------------
 %  SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Skills}
+\cvitem{AWS}{API Gateway, Lambda, DynamoDB, RDS, SQS, EMR, S3, CloudFront, ElastiCache, IAM}
 \cvdoubleitem{Language}{Python, Ruby, SQL, Javascript, R}{ETL}{Pentaho Data Integration, GoodData}
 \cvdoubleitem{Persistence}{Postgres, MySQL, MongoDB, DynamoDB}{Frameworks}{Ruby on Rails, Django, Flask}
-\cvdoubleitem{Client Framework}{EmberJS, AngularJS}{Platforms}{AWS Lambda, AWS API Gateway,}
+\cvdoubleitem{Client Framework}{EmberJS, AngularJS}{CI}{AWS Lambda, AWS API Gateway,}
 
 %----------------------------------------------------------------------------------------
 %  EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
-\cventry{2009--2010}{MA}{James Madison University}{Florence, Italy}{}{Political Science \textbf{4.0}/4.0}  % arguments 3 to 6 can be left empty
-\cventry{2005--2009}{BA}{James Madison University}{Harrisonburg, VA}{}{International Affairs \textbf{3.4}/4.0}
+\cventry{2009--2010}{MA Political Science \textbf{4.0}/4.0}{James Madison University}{Florence, Italy}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2005--2009}{BA International Affairs \textbf{3.4}/4.0}{James Madison University}{Harrisonburg, VA}{}{}
 
 %----------------------------------------------------------------------------------------
 % PUBLICATIONS SECTION
 %----------------------------------------------------------------------------------------
 \section{Publications}
+\small John A. Scherpereel, Jerry Wohlgemuth \& Margaret Schmelzinger (2016): \textbf{The Adoption and Use of Twitter as a Representational
+Tool among Members of the European Parliament}, \textit{European Politics and Society}, DOI: 10.1080/23745118.2016.1151125
 %\cvlistitem{Item 1}
 %\cvlistitem{Item 2}
 %\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
