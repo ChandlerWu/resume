@@ -1,3 +1,4 @@
 *.log
+*.Rproj
 .Rproj.user
 *.gz
