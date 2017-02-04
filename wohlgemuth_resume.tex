@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,merriweather]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -28,7 +28,7 @@
 \address{86 Park Ave. Apt. 2}{Hoboken, NJ 07030}{}
 \phone[mobile]{+1~(703)~786~2963}                   % optional, remove / comment the line if not wanted
 \email{wohlgejm@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{jerrywohlgemuth.com}                         % optional, remove / comment the line if not wanted
+\homepage{wtfruby.com}                         % optional, remove / comment the line if not wanted
 
 %----------------------------------------------------------------------------------------
 %  RESUME
@@ -46,26 +46,29 @@
 \cventry
 {2015--present}
 {Software Engineer}{StellaService}{New York NY}{}
-{Member of an agile development team focusing on TDD and paired programming
+{Member of an agile development team focused on TDD and paired programming
 \begin{itemize}
+\item Developed client dashboards using React with Chartjs and Elasticsearch backend
+\item Integrated ElasticSearch backend to greatly increase performance of full text searchs and aggregations throughout the application
+\item Contribute to a data return service written in Elixir/Phoenix
 \item Develop Rails app that serves thousands of customer service agents who solicit feedback from their customers
 \item Contribute to a Django app that delivers customer service metrics to retailers and Google
-\item Design AWS API Gateway/Lambda service to allow Zendesk, Desk.com and other CRMs to integrate with the core app
-\item Build a Django service to handle sending marketing emails as follow ups to solicitations sent through the Rails app
-\item Maintain separate EmberJS service that collects customer feedback
+\item Design AWS API Gateway/Lambda services to allow Zendesk, Desk.com and other CRMs to integrate with the core app
+\item Contribute to a Django service to handle sending marketing emails as follow ups to solicitations sent through the Rails app
+\item Maintain separate EmberJS app that collects customer feedback
+\item Build workflow for managing multi-tenency around integration with GoodData
 \end{itemize}}
 
 \cventry
 {2014--2015}
-{Director of Technology}{Media Thirst}{Washington, DC}{}
+{Director of Technology}{Media Thirst (Brand of WMC Global)}{Washington, DC}{}
 {Led team of five developers maintaining and improving Python applications
 \begin{itemize}
-\item Architected all web applications with a focus on developer velocity
 \item Developed Celery-based web crawlers that detected and scraped 100k+ advertisements a day
 \item Oversaw optical character recognition development to recognize text within advertisements; leveraged Alchemy API
 \item Improved user experience by refactoring front-end to use AngularJS
 \item Managed automated deployments using Fabric
-\item Developed prototype application based on scraping large amounts of data from the Google Play Store
+\item Developed prototype application based on scraping the Google Play Store
 \end{itemize}}
 \vspace{.15cm}
 
@@ -93,10 +96,10 @@ government bodies for top-tier wireless carrier
 %----------------------------------------------------------------------------------------
 
 \section{Skills}
-\cvitem{AWS}{API Gateway, Lambda, DynamoDB, RDS, SQS, EMR, S3, CloudFront, ElastiCache, IAM}
-\cvdoubleitem{Language}{Python, Ruby, SQL, Javascript, R}{ETL}{Pentaho Data Integration, GoodData}
-\cvdoubleitem{Persistence}{Postgres, MySQL, MongoDB, DynamoDB}{Frameworks}{Ruby on Rails, Django, Flask}
-\cvdoubleitem{Client Framework}{EmberJS, AngularJS}{CI}{Bamboo, CircleCI, Travis}
+\cvitem{AWS}{Lambda, API Gateway, ElasticSearch, DynamoDB, RDS, SQS, S3, CloudFront, ElastiCache, IAM}
+\cvdoubleitem{Language}{Ruby, Python, Javascript, Elixir}{ETL}{Pentaho Data Integration, GoodData}
+\cvdoubleitem{Persistence}{Postgres, MySQL, MongoDB}{Frameworks}{Ruby on Rails, Django, Flask}
+\cvdoubleitem{Client Frameworks}{Ember, React}{CI}{Bamboo, CircleCI, Travis}
 
 %----------------------------------------------------------------------------------------
 %  EDUCATION SECTION
