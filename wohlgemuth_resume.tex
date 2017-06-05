@@ -19,7 +19,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.88]{geometry}
+\usepackage[scale=0.89]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 % \setlength{\makecvtitlenamewidth}{100cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -29,14 +29,13 @@
 \phone[mobile]{+1~(703)~786~2963}                   % optional, remove / comment the line if not wanted
 \email{wohlgejm@gmail.com}                               % optional, remove / comment the line if not wanted
 \homepage{wtfruby.com}                         % optional, remove / comment the line if not wanted
-
 %----------------------------------------------------------------------------------------
 %  RESUME
 %----------------------------------------------------------------------------------------
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace{-1.25cm}
+\vspace{-1.5cm}
 
 %----------------------------------------------------------------------------------------
 %  EXPERIENCE SECTION
@@ -48,26 +47,26 @@
 {Software Engineer}{StellaService}{New York NY}{}
 {Member of an agile development team focused on TDD and paired programming
 \begin{itemize}
-\item Developed client dashboards using React with Chartjs and Elasticsearch backend
-\item Integrated ElasticSearch backend to greatly increase performance of full text searchs and aggregations throughout the application
-\item Contribute to a data return service written in Elixir/Phoenix
-\item Develop Rails app that serves thousands of customer service agents who solicit feedback from their customers
-\item Contribute to a Django app that delivers customer service metrics to retailers and Google
-\item Design AWS API Gateway/Lambda services to allow Zendesk, Desk.com and other CRMs to integrate with the core app
-\item Contribute to a Django service to handle sending marketing emails as follow ups to solicitations sent through the Rails app
-\item Maintain separate EmberJS app that collects customer feedback
-\item Build workflow for managing multi-tenency around integration with GoodData
+\item Develop Rails app that serves thousands of customer service agents who solicit feedback from millions of their customers
+\item Create client dashboards using React with Chartjs and Elasticsearch
+\item Refactor Rails app away from Postgres to use ElasticSearch for faster reads and analytics
+\item Commit to a data return service written in Elixir and Phoenix
+\item Contribute to a Django app that delivers customer service metrics to Google and retailers
+\item Design AWS Lambda service, using Python's Flask framework, to allow client CRMs to integrate with app
+\item Compose a Django service that handles business logic around sending follow-up marketing emails
+\item Maintain Ember.js app that collects customer feedback
+\item Build workflow for managing multi-tenency in an integration with GoodData
 \end{itemize}}
 
 \cventry
 {2014--2015}
-{Director of Technology}{Media Thirst (Brand of WMC Global)}{Washington, DC}{}
+{Director of Technology}{Media Thirst \normalfont{(Brand of WMC Global)}}{Washington, DC}{}
 {Led team of five developers maintaining and improving Python applications
 \begin{itemize}
-\item Developed Celery-based web crawlers that detected and scraped 100k+ advertisements a day
-\item Oversaw optical character recognition development to recognize text within advertisements; leveraged Alchemy API
+\item Developed Python-based web crawlers that detected and scraped hundreds of thousands of advertisements daily
+\item Oversaw optical character recognition development to recognize text within advertisements that leveraged Alchemy API
 \item Improved user experience by refactoring front-end to use AngularJS
-\item Managed automated deployments using Fabric
+\item Managed devops workflow using Fabric for builds and deploys
 \item Developed prototype application based on scraping the Google Play Store
 \end{itemize}}
 \vspace{.15cm}
@@ -76,7 +75,7 @@
 \begin{itemize}
 \item Provisioned and integrated Tabelau server into web applications
 \item Conducted interviews, on-boarded, and trained all new data analysts
-\item Developed R scripts to produce monthly and adhoc client deliverables
+\item Developed RStudio workbooks to produce monthly and adhoc client deliverables
 \item Maintained data warehouse and production ETLs
 \item Furthered client relationships by providing on-demand technical consulting
 \end{itemize}}
@@ -84,7 +83,7 @@
 
 \cventry{2011--2013}{Senior Data Analyst}{WMC Global}{Fairfax, VA}{}{Expanded organization's analytics consulting and development capabilities, leading to creation of data analytics department
 \begin{itemize}
-\item Engineered credit score-like product to evaluate risk of current and potential third party billing partners on wireless carrier’s networks in Python
+\item Engineered credit score-like product to evaluate risk of current and potential third party billing partners on wireless carrier’s networks
 \item Conceived and implemented fraud detection product, built using Pentaho Data Integration, to protect client’s subscriber base
 \item Liaised with client attorneys to provide ad hoc reporting requests to federal and state
 government bodies for top-tier wireless carrier
@@ -97,9 +96,9 @@ government bodies for top-tier wireless carrier
 
 \section{Skills}
 \cvitem{AWS}{Lambda, API Gateway, ElasticSearch, DynamoDB, RDS, SQS, S3, CloudFront, ElastiCache, IAM}
-\cvdoubleitem{Language}{Ruby, Python, Javascript, Elixir}{ETL}{Pentaho Data Integration, GoodData}
+\cvdoubleitem{Language}{Ruby, Python, Javascript, Elixir}{ETL}{GoodData, Pentaho Data Integration}
 \cvdoubleitem{Persistence}{Postgres, MySQL, MongoDB}{Frameworks}{Ruby on Rails, Django, Flask}
-\cvdoubleitem{Client Frameworks}{Ember, React}{CI}{Bamboo, CircleCI, Travis}
+\cvdoubleitem{Javascript}{Ember.js, React}{CI}{Bamboo, CircleCI, Travis}
 
 %----------------------------------------------------------------------------------------
 %  EDUCATION SECTION
@@ -115,6 +114,9 @@ government bodies for top-tier wireless carrier
 \section{Publications}
 \small John A. Scherpereel, Jerry Wohlgemuth \& Margaret Schmelzinger (2016): \textbf{The Adoption and Use of Twitter as a Representational
 Tool among Members of the European Parliament}, \textit{European Politics and Society}, DOI: 10.1080/23745118.2016.1151125
+\vspace{0.15cm}
+\\
+\small John A. Scherpereel, Jerry Wohlgemuth \& Audrey Lievens (in press): \textbf{Does Institutional Setting Affect Legislators’ Use of Twitter?}, \textit{Policy \& Internet}
 %\cvlistitem{Item 1}
 %\cvlistitem{Item 2}
 %\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
